@@ -1,0 +1,122 @@
+/* Style pour la police principale, appliqué au conteneur racine */
+
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+
+.main-font {
+    /*font-family: "Manrope", sans-serif;*/
+  font-family: Newsreader, "Noto Sans", sans-serif;
+}
+
+/* Style pour la bannière "Our Mission" */
+.hero-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 10%), 
+                    url("images/pexels-divinetechygirl-1181355.jpg");
+}
+
+/* Styles pour les icônes de la section "Our History" */
+.history-img-1 {
+  background-image: url("https://cdn.usegalileo.ai/sdxl10/e7afbbdb-4114-4dc3-ab0b-fde4e8e59745.png");
+}
+
+.history-img-2 {
+  background-image: url("https://cdn.usegalileo.ai/sdxl10/1886be5c-8135-4862-be32-70ea9d91660d.png");
+}
+
+.history-img-3 {
+  background-image: url("https://cdn.usegalileo.ai/sdxl10/e26a157f-78c4-4e96-96f7-db8eda255eea.png");
+}
+
+/* Styles pour les photos de la section "Our Team" */
+.team-img-1 {
+  background-image: url("images/Darren.jfif");
+}
+
+.team-img-2 {
+  background-image: url("images/Zed.jfif");
+}
+
+.team-img-3 {
+  background-image: url("images/dimitri.jfif");
+}
+
+.team-img-4 {
+  background-image: url("images/Gaetan.jpg");
+}
+
+.team-img-5 {
+  background-image: url("images/Axel-mombo.jfif");
+}
+
+.team-img-6 {
+  background-image: url("images/Ken-h.png");
+}
+
+.team-img-7 {
+  background-image: url("images/Harrys.png");
+}
+
+.team-img-8 {
+  background-image: url("images/Brice.jfif");
+}
+
+.team-img-9 {
+  background-image: url("images/Axel_mick.png");
+}
+
+.team-img-10 {
+  background-image: url("images/Saidou.jfif");
+}
+
+.team-img-11 {
+  background-image: url("images/Protais.png");
+}
+
+.team-img-12 {
+  background-image: url("images/Yanis.jpg");
+}
+
+
+/*
+ * 1. CLASSES POUR L'ANIMATION AU DÉFILEMENT (Intersection Observer)
+ */
+
+/* L'état initial "caché" de nos sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px); /* Légèrement décalé vers le bas */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* L'état final "visible" que le JS ajoutera */
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*
+ * 2. CLASSES POUR L'ANIMATION DU "HERO" AU CHARGEMENT
+ */
+
+/* État initial des textes du "Hero" */
+.hero-background h1,
+.hero-background h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* * État final (déclenché quand le JS ajoute la classe ".loaded" 
+ * au conteneur ".hero-background") 
+ */
+.hero-background.loaded h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s; /* Petit délai pour le H1 */
+}
+
+.hero-background.loaded h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s; /* Délai plus long pour le H2 */
+}

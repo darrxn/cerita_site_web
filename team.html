@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+  />
+
+  <title>Notre Équipe - CERITA Think Tank</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link rel="stylesheet" href="cerita.css">
+
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#f8f9fc] group/design-root overflow-x-hidden main-font">
+    <div class="layout-container flex h-full grow flex-col">
+      
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e6ecf4] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#0c131d]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </svg>
+          </div>
+          <h2 class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em] flex items-center gap-2">
+            <img src="C.png" alt="Logo" class="h-12 w-12" /> 
+            <span>CERITA Think Tank</span>
+          </h2>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Accueil</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Actualités</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Publications</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Evènements</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Contacts</a>
+          </div>
+
+          <button
+            id="open-search-btn"
+            type="button"
+            aria-label="Rechercher sur le site"
+            class="text-[#0c131d] transition-colors duration-200 hover:text-[#0045ad] focus:text-[#0045ad] focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">Faire un don</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex flex-1">
+        <div class="layout-content-container flex flex-col max-w-6xl w-full mx-auto flex-1 @container py-5 px-6 lg:px-8">
+          
+          <div class="flex flex-col gap-4 px-4 py-10">
+            <h1
+              class="text-[#0045ad] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+            >
+              Notre Équipe
+            </h1>
+            <p class="text-[#0c131d] text-base font-normal leading-normal max-w-[720px]">
+              Notre équipe pluridisciplinaire est composée d'ingénieurs, de chercheurs, de consultants et d'analystes passionnés dont les domaines d'expertise comprennent notamment la transformation digitale, la science des données, la monétique, la cybersécurité, le marketing, la gestion des risques et le droit.
+            </p>
+          </div>
+          
+          <div 
+            id="team-grid-container" 
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+          >
+            </div>
+
+            <div 
+            id="team-grid-container" 
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4"
+          >
+            </div>
+
+          <div class="p-4 @container">
+            <div class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-[#cdd8ea] bg-[#f8f9fc] p-5 @[480px]:flex-row @[480px]:items-center">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#0c131d] text-base font-bold leading-tight">Vous souhaitez rejoindre notre équipe ?</p>
+                <p class="text-[#456aa1] text-base font-normal leading-normal">
+                  Nous sommes constamment à la recherche de personnes passionnées et talentueuses, de tous domaines (IT, Communication, Recherche, Droit, etc.) qui partagent notre engagement en faveur de la transformation numérique des économies africaines. 
+                </p>
+              </div>
+              <a class="text-sm font-bold leading-normal tracking-[0.015em] flex gap-2 text-[#0c131d]" href="#">
+                Nous rejoindre
+                <div class="text-[#0c131d]" data-icon="ArrowRight" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div> 
+        </div> 
+    </div> 
+</div> 
+
+        </div>
+      </div>
+      
+    </div>
+  </div> <div 
+    id="search-modal" 
+    class="fixed inset-0 z-50 flex items-start justify-center bg-black/60 p-10 backdrop-blur-sm hidden"
+  >
+    <div class="relative w-full max-w-lg bg-white rounded-xl shadow-2xl p-6">
+      <button 
+        id="close-search-modal" 
+        type="button" 
+        aria-label="Fermer la recherche" 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 transition-colors"
+      >
+        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+      <form action="#" method="get" class="flex flex-col gap-4">
+        <label for="search-input" class="text-lg font-semibold text-[#0c131d]">Rechercher sur le site</label>
+        <div class="relative">
+          <input 
+            type="search" 
+            id="search-input" 
+            name="q" 
+            placeholder="Tapez vos mots-clés..." 
+            class="w-full h-12 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0045ad] focus:border-[#0045ad] outline-none"
+          />
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg class="size-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </div>
+        </div>
+        <button 
+          type="submit" 
+          class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold tracking-[0.015em] w-fit"
+        >
+          Rechercher
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <script src="team-data.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      
+      // --- 4. GESTION DE LA MODALE DE RECHERCHE (Essentiel) ---
+      const openSearchBtn = document.getElementById('open-search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearchBtn = document.getElementById('close-search-modal');
+      const searchInput = document.getElementById('search-input');
+      
+      if (openSearchBtn && searchModal && closeSearchBtn && searchInput) {
+        const openModal = () => {
+          searchModal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+          searchInput.focus();
+        };
+        const closeModal = () => {
+          searchModal.classList.add('hidden');
+          document.body.style.overflow = '';
+        };
+        openSearchBtn.addEventListener('click', openModal);
+        closeSearchBtn.addEventListener('click', closeModal);
+        searchModal.addEventListener('click', (event) => {
+          if (event.target === searchModal) {
+            closeModal();
+          }
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+            closeModal();
+          }
+        });
+      }
+
+      // --- 5. GÉNÉRATION DES PROFILS (PAGE ÉQUIPE) ---
+      const teamGridContainer = document.getElementById('team-grid-container');
+      
+      if (teamGridContainer && typeof teamMembers !== 'undefined') {
+        teamMembers.forEach(member => {
+          
+        
+          // C'est le nouveau code HTML pour la mise en page que vous vouliez
+          const profileHtml = `
+            <div class="flex flex-col gap-4 rounded-xl border border-[#cdd8ea] bg-white p-4 shadow-sm">
+              
+              <div class="flex flex-row items-start gap-4 h-24">
+                
+                <div class="flex-shrink-0 bg-center bg-no-repeat aspect-square bg-cover rounded-full w-20 h-20 ${member.cssClass}"></div>
+                
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em]">${member.name}</p>
+                  <p class="text-[#456aa1] text-sm font-bold leading-normal">${member.title}</p>
+                </div>
+              </div>
+              
+              <p class="text-[#456aa1] text-sm font-normal leading-normal">
+                ${member.bio}
+              </p>
+              
+            </div>
+          `;
+         
+          
+          teamGridContainer.innerHTML += profileHtml;
+        });
+      }
+
+    }); // <-- Fin du 'DOMContentLoaded'
+  </script>
+
+ </body>
+</html>

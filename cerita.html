@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+  />
+
+  <title>CERITA Think Tank</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link rel="stylesheet" href="cerita.css">
+
+</head>
+<body>
+  <div class="relative flex size-full min-h-screen flex-col bg-[#f8f9fc] group/design-root overflow-x-hidden main-font">
+    <div class="layout-container flex h-full grow flex-col">
+      
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e6ecf4] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#0c131d]">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+          </div>
+          <h2 class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em] flex items-center gap-2">
+            <img src="C.png" alt="Logo" class="h-12 w-12" />
+            <span>CERITA Think Tank</span>
+          </h2>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-8">
+          <div class="flex items-center gap-9">
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Accueil</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Actualités</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Publications</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Evènements</a>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Qui sommes nous ?</a>
+          </div>
+
+          <button
+            id="open-search-btn"
+            type="button"
+            aria-label="Rechercher sur le site"
+            class="text-[#0c131d] transition-colors duration-200 hover:text-[#0045ad] focus:text-[#0045ad] focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">Faire un don</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex flex-1">
+        <ddiv class="layout-content-container flex flex-col max-w-6xl w-full mx-auto flex-1 @container py-5 px-6 lg:px-8">
+          
+          <div class="@container">
+            <div class="@[480px]:p-4">
+              <div
+                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10 hero-background"
+              >
+                <div class="flex flex-col gap-2 text-left">
+                  <h1
+                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                  >
+                    Notre Mission
+                  </h1>
+                  <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                    Le CERITA (Cercle d'Etudes et de Réflexion Indépendant sur la Technologie en Afrique) est un laboratoire d'idées africain dédié à la transformation numérique ! Notre think tank, basé au Gabon mais aux ambitions panafricaines, est le carrefour où convergent ingénieurs, chercheurs, consultants, juristes et spécialistes de la communication digitale. Ensemble, nous explorons les défis et les horizons numériques et technologiques qui se présentent au continent africain.
+                    Notre ambition est claire : contribuer à la construction d'un avenir digital prospère et brillant pour le continent.
+
+                    Rejoignez-nous dans cette aventure passionnante ! Pour l'Afrique !
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-10 px-4 py-10 @container">
+            <div class="flex flex-col gap-4">
+              <h1
+                class="text-[#0045ad] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+              >
+                Notre approche
+              </h1>
+              <p class="text-[#0c131d] text-base font-normal leading-normal max-w-[720px]">
+                CERITA Think Tank is driven by a commitment to rigorous and innovative research, and we seek to bridge the gap between scholarly work and public policy. Our
+                approach is grounded in the following principles:
+              </p>
+            </div>
+
+            <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c131d] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+              >
+                <span class="truncate">En savoir plus sur notre approche</span>
+              </button>
+          </div>
+
+          
+
+          <div class="flex flex-col gap-10 px-4 py-10 @container">
+            <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-[#0045ad] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Nos valeurs
+                </h1>
+                <p class="text-[#0c131d] text-base font-normal leading-normal max-w-[720px]">
+                  CERITA Think Tank is guided by a set of core values that inform our approach to research, engagement, and organizational governance. These values reflect our
+                  commitment to social justice, human flourishing, and the responsible use of knowledge. Our values include the following:
+                </p>
+              </div>
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c131d] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+              >
+                <span class="truncate">En savoir plus nos valeurs</span>
+              </button>
+            </div>
+          </div>
+
+          <h2 class="text-[#0c131d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nos derniers articles</h2>
+          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#cdd8ea] bg-[#f8f9fc] p-4 flex-col">
+              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 history-img-1"></div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-[#0c131d] text-base font-bold leading-tight">2020</h2>
+                <p class="text-[#456aa1] text-sm font-normal leading-normal">
+                  CERITA Think Tank is founded by a group of scholars and activists dedicated to advancing social justice and sustainability through interdisciplinary research
+                  and public engagement.
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#cdd8ea] bg-[#f8f9fc] p-4 flex-col">
+              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 history-img-2"></div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-[#0c131d] text-base font-bold leading-tight">2021</h2>
+                <p class="text-[#456aa1] text-sm font-normal leading-normal">
+                  CERITA Think Tank launches its first research initiatives, focusing on topics such as climate justice, equitable technology, and inclusive democracy. We also
+                  host our first public event...
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-1 gap-3 rounded-lg border border-[#cdd8ea] bg-[#f8f9fc] p-4 flex-col">
+              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 history-img-3"></div>
+              <div class="flex flex-col gap-1">
+                <h2 class="text-[#0c131d] text-base font-bold leading-tight">2022</h2>
+                <p class="text-[#456aa1] text-sm font-normal leading-normal">
+                  CERITA Think Tank expands its team and partnerships, launching new research projects, educational programs, and public events. We also receive our first major
+                  grants and donations...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="text-[#0c131d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Team</h2>
+          
+          
+          <div id="team-preview-container"></div>
+
+            
+          
+          
+        
+
+          <div class="flex justify-center px-4 pt-5 pb-10">
+      <a 
+        href="team.html" 
+        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+      >
+        <span class="truncate">Découvrir toute l'équipe</span>
+      </a>
+    </div>
+
+          <div class="p-4 @container">
+            <div class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-[#cdd8ea] bg-[#f8f9fc] p-5 @[480px]:flex-row @[480px]:items-center">
+              <div class="flex flex-col gap-1">
+                <p class="text-[#0c131d] text-base font-bold leading-tight">Vous souhaitez rejoindre notre équipe ?</p>
+                <p class="text-[#456aa1] text-base font-normal leading-normal">
+                  Nous sommes constamment à la recherche de personnes passionnées et talentueuses, de tous domaines (IT, Communication, Recherche, Droit, etc.) qui partagent notre engagement en faveur de la transformation numérique des économies africaines. 
+                </p>
+              </div>
+              <a class="text-sm font-bold leading-normal tracking-[0.015em] flex gap-2 text-[#0c131d]" href="#">
+                Nous rejoindre
+                <div class="text-[#0c131d]" data-icon="ArrowRight" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div> <div 
+    id="search-modal" 
+    class="fixed inset-0 z-50 flex items-start justify-center bg-black/60 p-10 backdrop-blur-sm hidden"
+  >
+    <div class="relative w-full max-w-lg bg-white rounded-xl shadow-2xl p-6">
+      
+      <button 
+        id="close-search-modal" 
+        type="button" 
+        aria-label="Fermer la recherche" 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 transition-colors"
+      >
+        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <form action="#" method="get" class="flex flex-col gap-4">
+        <label for="search-input" class="text-lg font-semibold text-[#0c131d]">Rechercher sur le site</label>
+        <div class="relative">
+          <input 
+            type="search" 
+            id="search-input" 
+            name="q" 
+            placeholder="Tapez vos mots-clés..." 
+            class="w-full h-12 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0045ad] focus:border-[#0045ad] outline-none"
+          />
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg class="size-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </div>
+        </div>
+        <button 
+          type="submit" 
+          class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold tracking-[0.015em] w-fit"
+        >
+          Rechercher
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="team-data.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    
+    // ... (Tout votre code existant pour le Hero, l'Observer, la Flèche, la Modale) ...
+
+
+    // --- 5. GÉNÉRATION DES PROFILS (PAGE D'ACCUEIL) ---
+    
+    const teamPreviewContainer = document.getElementById('team-preview-container');
+    
+    // Vérifie que le conteneur et les données existent
+    if (teamPreviewContainer && typeof teamMembers !== 'undefined') {
+      
+      teamMembers.slice(0, 3).forEach(member => {
+        // Crée la version "compacte" du HTML
+        const profileHtml = `
+          <div class="flex p-4 @container">
+            <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+              <div class="flex gap-4">
+                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24 ${member.cssClass}"></div>
+                
+                <div class="flex flex-col justify-center">
+                  <p class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em]">${member.name}</p>
+                  <p class="text-[#456aa1] text-sm font-normal leading-normal">${member.title}</p>
+                  <br>
+                  <p class="text-[#456aa1] text-sm font-normal leading-normal">
+                    ${member.bio.substring()} 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        
+        // Ajoute le profil au conteneur
+        teamPreviewContainer.innerHTML += profileHtml;
+      });
+    }
+
+  }); // <-- Fin du 'DOMContentLoaded'
+</script>
+</body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      // --- 1. ANIMATION DU "HERO" AU CHARGEMENT ---
+      const heroSection = document.querySelector('.hero-background');
+      if (heroSection) {
+        // Ajoute la classe 'loaded' pour déclencher les transitions CSS
+        heroSection.classList.add('loaded');
+      }
+
+      // --- 2. ANIMATION AU DÉFILEMENT (INTERSECTION OBSERVER) ---
+      
+      // Configuration de l'Observer : se déclenche quand 10% de l'élément est visible
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1 
+      };
+
+      // La fonction qui sera appelée quand un élément entre dans le viewport
+      const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target); // On arrête d'observer une fois animé
+          }
+        });
+      };
+
+      // Création de l'observer
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+      // Cibler tous les éléments auxquels on veut appliquer l'effet "fade-in"
+      const elementsToObserve = document.querySelectorAll(
+        // Les sections "Our Approach" et "Our Values"
+        '.flex.flex-col.gap-10.px-4,' +
+        // Les 3 cartes "Our History"
+        '.grid > div[class*="border-"],' +
+        // Les 4 blocs "Our Team" et le bloc "Interested"
+        'div.flex.p-4.@container'
+      );
+
+      // Appliquer la classe de base et commencer à observer chaque élément
+      elementsToObserve.forEach(el => {
+        el.classList.add('fade-in-section'); // Ajoute l'état initial (caché)
+        observer.observe(el); // Commence à observer
+      });
+
+      // --- 3. ANIMATION DE LA FLÈCHE AU SURVOL ---
+      
+      // Cible le lien "View current openings"
+      const openingsLink = document.querySelector('a.flex.gap-2[href="#"]'); 
+      if (openingsLink) {
+        const arrowSvg = openingsLink.querySelector('svg');
+
+        if (arrowSvg) {
+          // Ajoute une transition CSS directement à la flèche
+          arrowSvg.style.transition = 'transform 0.3s ease';
+
+          openingsLink.addEventListener('mouseenter', () => {
+            arrowSvg.style.transform = 'translateX(5px)';
+          });
+
+          openingsLink.addEventListener('mouseleave', () => {
+            arrowSvg.style.transform = 'translateX(0)';
+          });
+        }
+      }
+
+      // --- 4. GESTION DE LA MODALE DE RECHERCHE ---
+    
+      const openSearchBtn = document.getElementById('open-search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearchBtn = document.getElementById('close-search-modal');
+      const searchInput = document.getElementById('search-input');
+      
+      // Vérifie si tous les éléments existent
+      if (openSearchBtn && searchModal && closeSearchBtn && searchInput) {
+        
+        // Fonction pour OUVRIR la modale
+        const openModal = () => {
+          searchModal.classList.remove('hidden'); // Affiche la modale
+          document.body.style.overflow = 'hidden'; // Empêche le scroll de la page
+          searchInput.focus(); // Met le curseur directement dans le champ de recherche
+        };
+        
+        // Fonction pour FERMER la modale
+        const closeModal = () => {
+          searchModal.classList.add('hidden'); // Cache la modale
+          document.body.style.overflow = ''; // Ré-autorise le scroll de la page
+        };
+
+        // --- Écouteurs d'événements ---
+
+        // 1. Clic sur l'icône loupe pour ouvrir
+        openSearchBtn.addEventListener('click', openModal);
+
+        // 2. Clic sur le bouton 'X' pour fermer
+        closeSearchBtn.addEventListener('click', closeModal);
+
+        // 3. Clic sur le fond (l'overlay) pour fermer
+        searchModal.addEventListener('click', (event) => {
+          // Si on clique sur l'overlay lui-même (id="search-modal") 
+          // et non sur ses enfants (le formulaire blanc)
+          if (event.target === searchModal) {
+            closeModal();
+          }
+        });
+
+        // 4. Touche "Escape" (Échap) pour fermer
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+            closeModal();
+          }
+        });
+      
+      } // <-- Fin du 'if (openSearchBtn && ...)'
+
+    }); // <-- Fin du 'DOMContentLoaded'
+  </script>
+
+ </body>
+</html>>
