@@ -2,7 +2,7 @@
 
 const teamMembers = [
   {
-    name: "Darren L.J. Ntoutoume, Ing.",
+    name: "Darren L.Jr. Ntoutoume, Ing.",
     title: "Founder & Head of CERITA Think Tank",
     bio: "Darren est un ingénieur et consultant en informatique spécialisé dans l'audit  des systèmes d'information et le pilotage de la performance. Il est titulaire d'un diplôme d'ingénieur en Génie Informatique de l'Université Centrale de Tunis et d’un Msc Risk & Finance de Kedge Business School. Il est en  poste depuis décembre 2022 chez Deloitte Afrique Francophone et basé à Libreville, au sein des équipes Risk Advisory et Audit & Assurance, au sein desquelles il intervient sur des missions de conseil en gestion des risques informatiques et opérationnels pour des clients de divers secteurs (services financiers, industries, télécoms, secteur public, etc.) basés au Gabon et dans la zone CEMAC . Il a fondé et dirige le CERITA depuis octobre 2023.",
     cssClass: "team-img-1" // Classe CSS pour l'image
