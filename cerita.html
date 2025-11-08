@@ -9,7 +9,7 @@
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
   />
 
-  <title>CERITA Think Tank</title>
+  <title>CERITA</title>
   <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -18,28 +18,71 @@
 
 </head>
 <body>
+
+
   <div class="relative flex size-full min-h-screen flex-col bg-[#f8f9fc] group/design-root overflow-x-hidden main-font">
     <div class="layout-container flex h-full grow flex-col">
       
       <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e6ecf4] px-10 py-3">
         <div class="flex items-center gap-4 text-[#0c131d]">
           <div class="size-4">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              </svg>
+            
           </div>
           <h2 class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em] flex items-center gap-2">
+            <a href="cerita.html">
             <img src="C.png" alt="Logo" class="h-12 w-12" />
-            <span>CERITA Think Tank</span>
+            </a>
+            <span><a href="cerita.html">CERITA Think Tank</a></span>
           </h2>
         </div>
         <div class="flex flex-1 items-center justify-end gap-8">
-          <div class="flex items-center gap-9">
-            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Accueil</a>
-            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Actualités</a>
-            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Publications</a>
-            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Evènements</a>
-            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Qui sommes nous ?</a>
-          </div>
+          
+                  <div class="flex items-center gap-9">
+                
+                <a class="text-[#0c131d] text-sm font-medium leading-normal" href="cerita.html">Accueil</a>
+
+                <div class="relative dropdown-menu">
+                  <button class="flex items-center gap-1 text-[#0c131d] text-sm font-medium leading-normal focus:outline-none">
+                     <span>
+                      <a class="text-[#0c131d] text-sm font-medium leading-normal" href="publications.html">Publications</a>
+                    </span>
+                    
+                  </button>
+                  <div class="dropdown-panel absolute -right-4 top-full pt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 
+                              opacity-0 scale-95 pointer-events-none 
+                              transition-all ease-out duration-200">
+                    <div class="py-1">
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Articles</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Etudes</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Baromètres</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tribunes</a>
+                    </div>
+                  </div>
+                </div>
+
+  <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Evènements</a>
+
+  <div class="relative dropdown-menu">
+    <button class="flex items-center gap-1 text-[#0c131d] text-sm font-medium leading-normal focus:outline-none">
+      <span>
+        <a class="text-[#0c131d] text-sm font-medium leading-normal" href="us.html">
+        Qui sommes nous ?
+        </a>
+      </span>
+      
+    </button>
+    <div class="dropdown-panel absolute -right-4 top-full pt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 
+                opacity-0 scale-95 pointer-events-none 
+                transition-all ease-out duration-200">
+      <div class="py-1">
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Missions et valeurs</a>
+        <a href="team.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Notre équipe</a>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+
+</div>
 
           <button
             id="open-search-btn"
@@ -66,58 +109,107 @@
           <button
             class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
           >
-            <span class="truncate">Faire un don</span>
+            <span class="truncate">S'inscrire à la Newsletter</span>
           </button>
         </div>
       </header>
 
       <div class="flex flex-1">
-        <ddiv class="layout-content-container flex flex-col max-w-6xl w-full mx-auto flex-1 @container py-5 px-6 lg:px-8">
+        
+        <div class="layout-content-container flex flex-col max-w-6xl w-full mx-auto flex-1 @container py-5 px-6 lg:px-8">
           
-          <div class="@container">
-            <div class="@[480px]:p-4">
-              <div
-                class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10 hero-background"
-              >
-                <div class="flex flex-col gap-2 text-left">
-                  <h1
-                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                  >
-                    Notre Mission
-                  </h1>
-                  <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                    Le CERITA (Cercle d'Etudes et de Réflexion Indépendant sur la Technologie en Afrique) est un laboratoire d'idées africain dédié à la transformation numérique ! Notre think tank, basé au Gabon mais aux ambitions panafricaines, est le carrefour où convergent ingénieurs, chercheurs, consultants, juristes et spécialistes de la communication digitale. Ensemble, nous explorons les défis et les horizons numériques et technologiques qui se présentent au continent africain.
-                    Notre ambition est claire : contribuer à la construction d'un avenir digital prospère et brillant pour le continent.
-
-                    Rejoignez-nous dans cette aventure passionnante ! Pour l'Afrique !
-                  </h2>
-                </div>
-              </div>
-            </div>
+         <div class="@container">
+  <div class="@[480px]:p-4">
+    <div class="flex min-h-[480px] flex-col bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl hero-background">
+      
+      <div id="hero-slider" class="flex w-full h-full transition-transform duration-500 ease-in-out">
+        
+        <div class="hero-slide flex-shrink-0 w-full min-h-[480px] flex flex-col items-start justify-end px-4 pb-10 @[480px]:px-10 gap-4" 
+             style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('images/pexels-ajae-6567674.jpg'); background-size: cover; background-position: center;">
+          <div class="flex flex-col gap-2 text-left">
+            <p class="text-white text-sm font-bold uppercase tracking-wider">À la une</p>
+            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+              Titre du premier article
+            </h1>
+            <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base line-clamp-3">
+              Ceci est un court extrait du premier article. Il décrit le sujet principal et incite l'utilisateur à cliquer pour en savoir plus.
+            </h2>
+            <a href="#" class="mt-2 text-white text-base font-bold underline transition-opacity hover:opacity-80">
+              Lire la suite
+            </a>
           </div>
+        </div>
+
+        <div class="hero-slide flex-shrink-0 w-full min-h-[480px] flex flex-col items-start justify-end px-4 pb-10 @[480px]:px-10 gap-4" 
+             style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('images/pexels-taryn-elliott-9324233.jpg'); background-size: cover; background-position: center;">
+          <div class="flex flex-col gap-2 text-left">
+            <p class="text-white text-sm font-bold uppercase tracking-wider">À la une</p>
+            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+              Titre du second article
+            </h1>
+            <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base line-clamp-3">
+              Voici le deuxième article à la une. Il parle d'un sujet différent mais tout aussi pertinent pour notre mission.
+            </h2>
+            <a href="#" class="mt-2 text-white text-base font-bold underline transition-opacity hover:opacity-80">
+              Lire la suite
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-slide flex-shrink-0 w-full min-h-[480px] flex flex-col items-start justify-end px-4 pb-10 @[480px]:px-10 gap-4" 
+             style="background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%), url('images/pexels-tomas-wells-30354857-6930841.jpg'); background-size: cover; background-position: center;">
+          <div class="flex flex-col gap-2 text-left">
+            <p class="text-white text-sm font-bold uppercase tracking-wider">À la une</p>
+            <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+              Titre du troisième article
+            </h1>
+            <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base line-clamp-3">
+              Le troisième article conclut notre sélection à la une de cette semaine.
+            </h2>
+            <a href="#" class="mt-2 text-white text-base font-bold underline transition-opacity hover:opacity-80">
+              Lire la suite
+            </a>
+          </div>
+        </div>
+        
+      </div> <button id="hero-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/50 text-black transition-all hover:bg-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+        </svg>
+      </button>
+      <button id="hero-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/50 text-black transition-all hover:bg-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+</div>
 
           <div class="flex flex-col gap-10 px-4 py-10 @container">
             <div class="flex flex-col gap-4">
               <h1
                 class="text-[#0045ad] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
               >
-                Notre approche
+                Notre mission et notre approche
               </h1>
               <p class="text-[#0c131d] text-base font-normal leading-normal max-w-[720px]">
-                CERITA Think Tank is driven by a commitment to rigorous and innovative research, and we seek to bridge the gap between scholarly work and public policy. Our
-                approach is grounded in the following principles:
+                Le CERITA (Cercle d'Etudes et de Réflexion Indépendant sur la Technologie en Afrique) est un laboratoire d'idées africain dédié à la transformation numérique ! Notre think tank, basé au Gabon mais aux ambitions panafricaines, est le carrefour où convergent ingénieurs, chercheurs, consultants, juristes et spécialistes de la communication digitale. Ensemble, nous explorons les défis et les horizons numériques et technologiques qui se présentent au continent africain.
+                    Notre ambition est claire : contribuer à la construction d'un avenir digital prospère et brillant pour le continent.
+
+                    Rejoignez-nous dans cette aventure passionnante ! Pour l'Afrique !
               </p>
             </div>
 
             <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c131d] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
-              >
-                <span class="truncate">En savoir plus sur notre approche</span>
-              </button>
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c131d] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            >
+              <span class="truncate">En savoir plus sur notre mission et notre approche</span>
+            </button>
           </div>
 
           
-
           <div class="flex flex-col gap-10 px-4 py-10 @container">
             <div class="flex flex-col gap-6">
               <div class="flex flex-col gap-4">
@@ -139,58 +231,265 @@
             </div>
           </div>
 
-          <h2 class="text-[#0c131d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Nos derniers articles</h2>
-          <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-            <div class="flex flex-1 gap-3 rounded-lg border border-[#cdd8ea] bg-[#f8f9fc] p-4 flex-col">
-              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 history-img-1"></div>
-              <div class="flex flex-col gap-1">
-                <h2 class="text-[#0c131d] text-base font-bold leading-tight">2020</h2>
-                <p class="text-[#456aa1] text-sm font-normal leading-normal">
-                  CERITA Think Tank is founded by a group of scholars and activists dedicated to advancing social justice and sustainability through interdisciplinary research
-                  and public engagement.
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-1 gap-3 rounded-lg border border-[#cdd8ea] bg-[#f8f9fc] p-4 flex-col">
-              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 history-img-2"></div>
-              <div class="flex flex-col gap-1">
-                <h2 class="text-[#0c131d] text-base font-bold leading-tight">2021</h2>
-                <p class="text-[#456aa1] text-sm font-normal leading-normal">
-                  CERITA Think Tank launches its first research initiatives, focusing on topics such as climate justice, equitable technology, and inclusive democracy. We also
-                  host our first public event...
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-1 gap-3 rounded-lg border border-[#cdd8ea] bg-[#f8f9fc] p-4 flex-col">
-              <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0 history-img-3"></div>
-              <div class="flex flex-col gap-1">
-                <h2 class="text-[#0c131d] text-base font-bold leading-tight">2022</h2>
-                <p class="text-[#456aa1] text-sm font-normal leading-normal">
-                  CERITA Think Tank expands its team and partnerships, launching new research projects, educational programs, and public events. We also receive our first major
-                  grants and donations...
-                </p>
-              </div>
-            </div>
-          </div>
+     <!-- 
+  ===== CORRECTION 1 =====
+  J'ai supprimé les <div> superflus (px-6 lg:px-8 et max-w-6xl) 
+  qui enveloppaient cette section et cassaient l'alignement.
+-->
 
-          <h2 class="text-[#0c131d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Our Team</h2>
-          
-          
-          <div id="team-preview-container"></div>
+<!-- ====== SECTION "NOS DERNIERS ARTICLES" (Corrigée) ====== -->
+<div class="flex items-center justify-between mb-6">
+  <h2 class="text-[#0c131d] text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Nos derniers articles</h2>
+  <div class="flex gap-2">
+    <button id="scroll-left-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <button id="scroll-right-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+</div>
 
-            
-          
-          
-        
-
-          <div class="flex justify-center px-4 pt-5 pb-10">
-      <a 
-        href="team.html" 
-        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
-      >
-        <span class="truncate">Découvrir toute l'équipe</span>
-      </a>
+<div id="articles-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 hide-scrollbar">
+  
+  <!-- Article 1 (Hauteur corrigée) -->
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <!-- ===== CORRECTION 2 (Hauteur) : Ajout de h-full flex flex-col ===== -->
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/pexels-fauxels-3184292.jpg" alt="Article 1" class="w-full h-48 object-cover opacity-85 ">
+      <!-- ===== CORRECTION 2 (Hauteur) : Ajout de flex-1 flex flex-col justify-between ===== -->
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <!-- Ajout d'un <div> pour grouper le texte -->
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Actualités - 15 Mai 2024</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Les enjeux de la transformation numérique au Gabon</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Un aperçu de l'impact de l'IA sur l'économie africaine et comment CERITA Think Tank y contribue...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire la suite
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
     </div>
+  </div>
+
+  <!-- Article 2 (Hauteur corrigée) -->
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/people-2557396_1920.jpg" alt="Article 2" class="w-full h-48 object-cover">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Analyse - 10 Mai 2024</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Défi de la cybersécurité en Afrique : solutions proposées</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Analyse approfondie des défis majeurs et des stratégies efficaces...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire la suite
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article 3 (Hauteur corrigée) -->
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/pexels-ajae-6567674.jpg" alt="Article 3" class="w-full h-48 object-cover">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Etude - 05 Mai 2024</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Blockchain et développement durable en Afrique de l'Ouest</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Comment la technologie blockchain peut soutenir les initiatives de développement durable...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire la suite
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article 4 (Hauteur corrigée) -->
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/pexels-tomas-wells-30354857-6930841.jpg" alt="Article 4" class="w-full h-48 object-cover">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Analyse - 10 Mai 2024</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Défi de la cybersécurité en Afrique : solutions proposées</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Analyse approfondie des défis majeurs et des stratégies efficaces...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire la suite
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bouton "Découvrez tous nos articles" (Corrigé : centré) -->
+<div class="flex justify-left px-4 pt-5 pb-10">
+  <a 
+    href="articles.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+  >
+    <span class="truncate">Découvrez tous nos articles</span>
+  </a>
+</div>
+        
+        
+<!-- 
+  ===== SECTION "NOS ÉTUDES" (Structure corrigée) =====
+  J'ai supprimé les <div> superflus (px-6 lg:px-8 et max-w-6xl).
+  Les cartes ont déjà la correction de hauteur.
+-->
+<div class="flex items-center justify-between mb-6">
+  <h2 class="text-[#0c131d] text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Nos dernières études</h2>
+  <div class="flex gap-2">
+    <button id="etudes-scroll-left-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <button id="etudes-scroll-right-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div id="etudes-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 hide-scrollbar">
+  
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/antenna-5357958_1920.jpg" alt="Étude 1" class="w-full h-48 object-cover opacity-75">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Étude de Cas - 01 Nov 2025</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Impact de la 5G sur le E-commerce</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Analyse détaillée de la manière dont la 5G redéfinit l'expérience utilisateur...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire l'étude
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/pexels-agk42-2599244.jpg" alt="Étude 2" class="w-full h-48 object-cover opacity-75">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Étude Comparative - 25 Oct 2025</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Cadres réglementaires de l'IA</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Comparaison des approches réglementaires de l'intelligence artificielle...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire l'étude
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/pexels-energepic-com-27411-2988232.jpg" alt="Étude 3" class="w-full h-48 object-cover opacity-75">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Rapport de Recherche - 10 Oct 2025</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Inclusion financière et Mobile Money</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Notre dernier rapport sur le rôle des services de Mobile Money...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire l'étude
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex-shrink-0 w-80 snap-center p-2">
+    <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+      <img src="images/pexels-caleb-ishaya-313370124-31528041.jpg" alt="Étude 4" class="w-full h-48 object-cover opacity-75">
+      <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+        <div>
+          <p class="text-xs text-gray-500 mb-1">Étude de Faisabilité - 01 Oct 2025</p>
+          <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">IoT pour l'agriculture durable</h3>
+          <p class="text-sm text-[#456aa1] line-clamp-3">
+            Faisabilité de l'implémentation de solutions IoT (Internet des Objets)...
+          </p>
+        </div>
+        <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+          Lire l'étude
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 ml-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Bouton "Découvrez nos études" (Corrigé : centré) -->
+<div class="flex justify-left px-4 pt-5 pb-10">
+  <a 
+    href="etudes.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+  >
+    <span class="truncate">Découvrez nos études</span>
+  </a>
+</div>
+<!-- ====== FIN DES SECTIONS CARROUSEL ====== -->
+           
+
+          <h2 class="text-[#0c131d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Notre équipe</h2>
+          
+          <div id="team-preview-container" class="flex flex-col gap-4"></div>
+          
+          <div class="flex justify-left px-4 pt-5 pb-10">
+            <a 
+              href="team.html" 
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            >
+              <span class="truncate">Découvrir toute l'équipe</span>
+            </a>
+          </div>
 
           <div class="p-4 @container">
             <div class="flex flex-1 flex-col items-start justify-between gap-4 rounded-xl border border-[#cdd8ea] bg-[#f8f9fc] p-5 @[480px]:flex-row @[480px]:items-center">
@@ -217,7 +516,9 @@
       </div>
       
     </div>
-  </div> <div 
+  </div> 
+  
+  <div 
     id="search-modal" 
     class="fixed inset-0 z-50 flex items-start justify-center bg-black/60 p-10 backdrop-blur-sm hidden"
   >
@@ -260,114 +561,54 @@
     </div>
   </div>
 
+  
   <script src="team-data.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    
-    // ... (Tout votre code existant pour le Hero, l'Observer, la Flèche, la Modale) ...
-
-
-    // --- 5. GÉNÉRATION DES PROFILS (PAGE D'ACCUEIL) ---
-    
-    const teamPreviewContainer = document.getElementById('team-preview-container');
-    
-    // Vérifie que le conteneur et les données existent
-    if (teamPreviewContainer && typeof teamMembers !== 'undefined') {
-      
-      teamMembers.slice(0, 3).forEach(member => {
-        // Crée la version "compacte" du HTML
-        const profileHtml = `
-          <div class="flex p-4 @container">
-            <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
-              <div class="flex gap-4">
-                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24 ${member.cssClass}"></div>
-                
-                <div class="flex flex-col justify-center">
-                  <p class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em]">${member.name}</p>
-                  <p class="text-[#456aa1] text-sm font-normal leading-normal">${member.title}</p>
-                  <br>
-                  <p class="text-[#456aa1] text-sm font-normal leading-normal">
-                    ${member.bio.substring()} 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        `;
-        
-        // Ajoute le profil au conteneur
-        teamPreviewContainer.innerHTML += profileHtml;
-      });
-    }
-
-  }); // <-- Fin du 'DOMContentLoaded'
-</script>
-</body>
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-
-      // --- 1. ANIMATION DU "HERO" AU CHARGEMENT ---
+    
+      // --- 1. ANIMATION DU "HERO" ---
       const heroSection = document.querySelector('.hero-background');
       if (heroSection) {
-        // Ajoute la classe 'loaded' pour déclencher les transitions CSS
         heroSection.classList.add('loaded');
       }
 
       // --- 2. ANIMATION AU DÉFILEMENT (INTERSECTION OBSERVER) ---
-      
-      // Configuration de l'Observer : se déclenche quand 10% de l'élément est visible
       const observerOptions = {
         root: null,
         rootMargin: "0px",
         threshold: 0.1 
       };
-
-      // La fonction qui sera appelée quand un élément entre dans le viewport
       const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target); // On arrête d'observer une fois animé
+            observer.unobserve(entry.target);
           }
         });
       };
-
-      // Création de l'observer
       const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-      // Cibler tous les éléments auxquels on veut appliquer l'effet "fade-in"
+      
+      // Sélecteur @container corrigé
       const elementsToObserve = document.querySelectorAll(
-        // Les sections "Our Approach" et "Our Values"
         '.flex.flex-col.gap-10.px-4,' +
-        // Les 3 cartes "Our History"
         '.grid > div[class*="border-"],' +
-        // Les 4 blocs "Our Team" et le bloc "Interested"
-        'div.flex.p-4.@container'
+        'div[class*="@container"]' 
       );
-
-      // Appliquer la classe de base et commencer à observer chaque élément
       elementsToObserve.forEach(el => {
-        el.classList.add('fade-in-section'); // Ajoute l'état initial (caché)
-        observer.observe(el); // Commence à observer
+        el.classList.add('fade-in-section');
+        observer.observe(el);
       });
 
       // --- 3. ANIMATION DE LA FLÈCHE AU SURVOL ---
-      
-      // Cible le lien "View current openings"
       const openingsLink = document.querySelector('a.flex.gap-2[href="#"]'); 
       if (openingsLink) {
         const arrowSvg = openingsLink.querySelector('svg');
-
         if (arrowSvg) {
-          // Ajoute une transition CSS directement à la flèche
           arrowSvg.style.transition = 'transform 0.3s ease';
-
           openingsLink.addEventListener('mouseenter', () => {
             arrowSvg.style.transform = 'translateX(5px)';
           });
-
           openingsLink.addEventListener('mouseleave', () => {
             arrowSvg.style.transform = 'translateX(0)';
           });
@@ -375,56 +616,296 @@
       }
 
       // --- 4. GESTION DE LA MODALE DE RECHERCHE ---
-    
       const openSearchBtn = document.getElementById('open-search-btn');
       const searchModal = document.getElementById('search-modal');
       const closeSearchBtn = document.getElementById('close-search-modal');
       const searchInput = document.getElementById('search-input');
       
-      // Vérifie si tous les éléments existent
       if (openSearchBtn && searchModal && closeSearchBtn && searchInput) {
-        
-        // Fonction pour OUVRIR la modale
         const openModal = () => {
-          searchModal.classList.remove('hidden'); // Affiche la modale
-          document.body.style.overflow = 'hidden'; // Empêche le scroll de la page
-          searchInput.focus(); // Met le curseur directement dans le champ de recherche
+          searchModal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+          searchInput.focus();
         };
-        
-        // Fonction pour FERMER la modale
         const closeModal = () => {
-          searchModal.classList.add('hidden'); // Cache la modale
-          document.body.style.overflow = ''; // Ré-autorise le scroll de la page
+          searchModal.classList.add('hidden');
+          document.body.style.overflow = '';
         };
-
-        // --- Écouteurs d'événements ---
-
-        // 1. Clic sur l'icône loupe pour ouvrir
         openSearchBtn.addEventListener('click', openModal);
-
-        // 2. Clic sur le bouton 'X' pour fermer
         closeSearchBtn.addEventListener('click', closeModal);
-
-        // 3. Clic sur le fond (l'overlay) pour fermer
         searchModal.addEventListener('click', (event) => {
-          // Si on clique sur l'overlay lui-même (id="search-modal") 
-          // et non sur ses enfants (le formulaire blanc)
           if (event.target === searchModal) {
             closeModal();
           }
         });
-
-        // 4. Touche "Escape" (Échap) pour fermer
         document.addEventListener('keydown', (event) => {
           if (event.key === 'Escape' && !searchModal.classList.contains('hidden')) {
             closeModal();
           }
         });
-      
-      } // <-- Fin du 'if (openSearchBtn && ...)'
+      }
 
+      // --- 5. GÉNÉRATION DES PROFILS (PAGE D'ACCUEIL) ---
+      const teamPreviewContainer = document.getElementById('team-preview-container');
+      
+      if (teamPreviewContainer && typeof teamMembers !== 'undefined') {
+        
+        teamMembers.slice(0, 3).forEach(member => { // Gardé .slice(0, 3) comme dans votre code
+          const profileHtml = `
+            <div class="flex p-4 @container rounded-xl shadow-sm bg-white border border-transparent transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1">
+              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+                <div class="flex gap-4">
+                  <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-24 w-24 ${member.cssClass}"></div>
+                  
+                  <div class="flex flex-col justify-center">
+                    <p class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em]">${member.name}</p>
+                    <p class="text-[#456aa1] text-sm font-normal leading-normal">${member.title}</p>
+                    <br>
+                    <p class="text-[#456aa1] text-sm font-normal leading-normal">
+                      ${member.bio.substring()}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          teamPreviewContainer.innerHTML += profileHtml;
+        });
+      }
+
+      // --- 6. GESTION DU CARROUSEL D'ARTICLES ---
+      const articlesCarousel = document.getElementById('articles-carousel');
+      const scrollLeftBtn = document.getElementById('scroll-left-btn');
+      const scrollRightBtn = document.getElementById('scroll-right-btn');
+
+      if (articlesCarousel && scrollLeftBtn && scrollRightBtn) {
+        const scrollAmount = 300; 
+        scrollLeftBtn.addEventListener('click', () => {
+          articlesCarousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+        scrollRightBtn.addEventListener('click', () => {
+          articlesCarousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+        
+      } // <-- Accolade manquante du 'if (articlesCarousel...)'
+
+      // ... (code existant, par ex. GESTION DU CARROUSEL D'ARTICLES) ...
+
+      // --- 7. GESTION DU CARROUSEL "À LA UNE" ---
+      const heroWrapper = document.querySelector('.hero-background'); 
+      const heroSlider = document.getElementById('hero-slider');
+      const heroSlides = document.querySelectorAll('.hero-slide');
+      const heroPrevBtn = document.getElementById('hero-prev');
+      const heroNextBtn = document.getElementById('hero-next');
+      
+      // MODIFIÉ : Ajout de heroWrapper à la vérification
+      if (heroSlider && heroSlides.length > 0 && heroPrevBtn && heroNextBtn && heroWrapper) {
+        
+        let currentSlide = 0;
+        const totalSlides = heroSlides.length;
+        
+        // NOUVEAU : Variables pour l'auto-défilement
+        const intervalTime = 5000; // 1000ms = 1 seconde
+        let slideInterval; // Variable pour stocker notre intervalle
+
+        const goToSlide = (slideIndex) => {
+          // Gérer le "wrap-around" (boucle)
+          if (slideIndex < 0) {
+            currentSlide = totalSlides - 1;
+          } else if (slideIndex >= totalSlides) {
+            currentSlide = 0;
+          } else {
+            currentSlide = slideIndex;
+          }
+          
+          // Déplacer le conteneur slider
+          heroSlider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        };
+
+        // --- NOUVELLES FONCTIONS ---
+        
+        // Fonction pour démarrer le défilement automatique
+        const startSlideShow = () => {
+          clearInterval(slideInterval); // Sécurité : efface l'ancien intervalle
+          slideInterval = setInterval(() => {
+            goToSlide(currentSlide + 1);
+          }, intervalTime);
+        };
+
+        // Fonction pour arrêter le défilement
+        const stopSlideShow = () => {
+          clearInterval(slideInterval);
+        };
+        
+        // --- FIN DES NOUVELLES FONCTIONS ---
+
+        heroNextBtn.addEventListener('click', () => {
+          goToSlide(currentSlide + 1);
+          // MODIFIÉ : Le clic réinitialise le timer (en le redémarrant)
+          // (il sera immédiatement mis en pause si la souris est dessus)
+          startSlideShow(); 
+        });
+
+        heroPrevBtn.addEventListener('click', () => {
+          goToSlide(currentSlide - 1);
+          // MODIFIÉ : Le clic réinitialise le timer
+          startSlideShow();
+        });
+
+        // NOUVEAU : Gère la pause au survol
+        heroWrapper.addEventListener('mouseenter', stopSlideShow);
+        heroWrapper.addEventListener('mouseleave', startSlideShow);
+
+        // NOUVEAU : Lance le défilement au chargement de la page
+        startSlideShow();
+      }
+
+// ... (Fin du code pour le carrousel d'articles) ...
+      if (articlesCarousel && scrollLeftBtn && scrollRightBtn) {
+        // ... (code des boutons d'articles) ...
+      } // <-- Accolade de fermeture du 'if (articlesCarousel...)'
+
+      // --- 7. GESTION DU CARROUSEL ÉTUDES ---
+      const etudesCarousel = document.getElementById('etudes-carousel');
+      const etudesScrollLeftBtn = document.getElementById('etudes-scroll-left-btn');
+      const etudesScrollRightBtn = document.getElementById('etudes-scroll-right-btn');
+
+      if (etudesCarousel && etudesScrollLeftBtn && etudesScrollRightBtn) {
+        const scrollAmount = 300; // Vous pouvez ajuster ce montant
+
+        etudesScrollLeftBtn.addEventListener('click', () => {
+          etudesCarousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+
+        etudesScrollRightBtn.addEventListener('click', () => {
+          etudesCarousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+      }
+      
+
+      // --- 8. GESTION DES MENUS DÉROULANTS ---
+      const dropdowns = document.querySelectorAll('.dropdown-menu');
+      
+      dropdowns.forEach(dropdown => {
+        const panel = dropdown.querySelector('.dropdown-panel');
+        
+        // Affiche au survol de l'ensemble (bouton + panel)
+        dropdown.addEventListener('mouseenter', () => {
+          panel.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+          panel.classList.add('opacity-100', 'scale-100', 'pointer-events-auto');
+        });
+        
+        // Cache quand la souris quitte l'ensemble
+        dropdown.addEventListener('mouseleave', () => {
+          panel.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+          panel.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
+        });
+      });
+
+
+      
     }); // <-- Fin du 'DOMContentLoaded'
   </script>
 
  </body>
-</html>>
+
+ <script src="team-data.js"></script>
+  <script>
+    // ... votre code JS ...
+  </script>
+
+  <footer class="bg-[#0c131d] text-[#f8f9fc] py-12">
+    <div class="max-w-6xl w-full mx-auto px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <img src="C.png" alt="Logo CERITA" class="h-28 w-28 bg-white rounded-md p-1">
+           <!---- <span class="text-xl font-bold">CERITA</span> -->
+          </div>
+          <p class="text-sm text-gray-400">
+            Cercle d'Etudes et de Réflexion Indépendant sur la Technologie en Afrique.
+          </p>
+          <div class="text-sm text-gray-400">
+            <p>Libreville, Gabon</p>
+            <p class="mt-1">
+              <a href="mailto:contact@cerita.org" class="hover:text-white hover:underline">contact@cerita.org</a>
+            </p>
+            <p>
+              <a href="tel:+24111223344" class="hover:text-white hover:underline">+241 11 22 33 44</a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Publications</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Articles</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Etudes</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Baromètres</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Tribunes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Qui sommes-nous</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Missions et valeurs</a></li>
+            <li><a href="team.html" class="text-sm text-gray-400 hover:text-white hover:underline">Notre équipe</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Evènements</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Nous contacter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Suivez-nous</h3>
+          <div class="flex gap-3">
+            <a href="#" class="bg-[#0045ad] p-2 rounded-md text-white transition-opacity hover:opacity-80" aria-label="Suivez-nous sur X">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="bg-[#0045ad] p-2 rounded-md text-white transition-opacity hover:opacity-80" aria-label="Suivez-nous sur LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#" class="bg-[#0045ad] p-2 rounded-md text-white transition-opacity hover:opacity-80" aria-label="Suivez-nous sur YouTube">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="mt-10 border-gray-700">
+      <div class="mt-8 text-center text-sm text-gray-500">
+        <p>© 2025 CERITA Think Tank. Tous droits réservés.</p>
+        <p class="mt-1">
+          <a href="#" class="hover:text-gray-300 hover:underline">Politique de confidentialité</a>
+          <span class="mx-2">|</span>
+          <a href="#" class="hover:text-gray-300 hover:underline">Mentions légales</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+  </body>
+</html>
+
+</html>
