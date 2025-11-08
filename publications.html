@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+  <link
+    rel="stylesheet"
+    as="style"
+    onload="this.rel='stylesheet'"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+  />
+
+  <title>CERITA</title>
+  <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link rel="stylesheet" href="cerita.css">
+
+</head>
+<body>
+
+
+  <div class="relative flex size-full min-h-screen flex-col bg-[#f8f9fc] group/design-root overflow-x-hidden main-font">
+    <div class="layout-container flex h-full grow flex-col">
+      
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e6ecf4] px-10 py-3">
+        <div class="flex items-center gap-4 text-[#0c131d]">
+          <div class="size-4">
+          </div>
+          <h2 class="text-[#0c131d] text-lg font-bold leading-tight tracking-[-0.015em] flex items-center gap-2">
+           <a href="cerita.html">
+             <img src="C.png" alt="Logo" class="h-12 w-12" />
+            </a> 
+            <span>
+                <a href="cerita.html">
+                CERITA Think Tank</a>
+            </span>
+          </h2>
+        </div>
+        <div class="flex flex-1 items-center justify-end gap-8">
+          
+          <div class="flex items-center gap-9">
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="cerita.html">Accueil</a>
+            <div class="relative dropdown-menu">
+              <button class="flex items-center gap-1 text-[#0c131d] text-sm font-medium leading-normal focus:outline-none">
+                 <span>
+                      <a class="text-[#0c131d] text-sm font-medium leading-normal" href="publications.html">Publications</a>
+                </span>
+              </button>
+              <div class="dropdown-panel absolute -right-4 top-full pt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 
+                            opacity-0 scale-95 pointer-events-none 
+                            transition-all ease-out duration-200">
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Articles</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Etudes</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Baromètres</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tribunes</a>
+                </div>
+              </div>
+            </div>
+            <a class="text-[#0c131d] text-sm font-medium leading-normal" href="#">Evènements</a>
+            <div class="relative dropdown-menu">
+              <button class="flex items-center gap-1 text-[#0c131d] text-sm font-medium leading-normal focus:outline-none">
+                <span>Qui sommes nous ?</span>
+              </button>
+              <div class="dropdown-panel absolute -right-4 top-full pt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50 
+                            opacity-0 scale-95 pointer-events-none 
+                            transition-all ease-out duration-200">
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Missions et valeurs</a>
+                  <a href="team.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Notre équipe</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Nous contacter</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            id="open-search-btn"
+            type="button"
+            aria-label="Rechercher sur le site"
+            class="text-[#0c131d] transition-colors duration-200 hover:text-[#0045ad] focus:text-[#0045ad] focus:outline-none"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </button>
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">S'inscrire à la Newsletter</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="flex flex-1">
+        
+        <div class="layout-content-container flex flex-col max-w-6xl w-full mx-auto flex-1 @container py-5 px-6 lg:px-8">
+          
+          <div class="flex flex-col gap-4 px-4 py-10 @container">
+            <h1 class="text-[#0045ad] tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+              Nos Publications
+            </h1>
+            <p class="text-[#0c131d] text-base font-normal leading-normal max-w-[720px]">
+              Explorez nos analyses approfondies, nos études de cas et nos perspectives sur la transformation numérique en Afrique.
+            </p>
+          </div>
+          
+          
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-[#0c131d] text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Nos derniers articles</h2>
+            <div class="flex gap-2">
+              <button id="scroll-left-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button id="scroll-right-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="articles-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 hide-scrollbar">
+            
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-fauxels-3184292.jpg" alt="Article 1" class="w-full h-48 object-cover opacity-75 ">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Actualités - 15 Mai 2024</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Les enjeux de la transformation numérique au Gabon</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Un aperçu de l'impact de l'IA sur l'économie africaine et comment CERITA Think Tank y contribue...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la suite
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/people-2557396_1920.jpg" alt="Article 2" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Analyse - 10 Mai 2024</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Défi de la cybersécurité en Afrique : solutions proposées</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Analyse approfondie des défis majeurs et des stratégies efficaces...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la suite
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-ajae-6567674.jpg" alt="Article 3" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Etude - 05 Mai 2024</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Blockchain et développement durable en Afrique de l'Ouest</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Comment la technologie blockchain peut soutenir les initiatives de développement durable...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la suite
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-tomas-wells-30354857-6930841.jpg" alt="Article 4" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Analyse - 10 Mai 2024</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Défi de la cybersécurité en Afrique : solutions proposées</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Analyse approfondie des défis majeurs et des stratégies efficaces...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la suite
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-cottonbro-5054539.jpg" alt="Article 5" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Actualités - 01 Mai 2024</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Le rôle de la Fintech dans l'inclusion financière</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Comment les startups Fintech révolutionnent l'accès aux services financiers pour des millions de personnes.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la suite
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex justify-left px-4 pt-5 pb-10">
+            <a 
+              href="articles.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            >
+              <span class="truncate">Découvrez tous nos articles</span>
+            </a>
+          </div>
+          
+          
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-[#0c131d] text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Nos dernières études</h2>
+            <div class="flex gap-2">
+              <button id="etudes-scroll-left-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button id="etudes-scroll-right-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="etudes-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 hide-scrollbar">
+            
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/antenna-5357958_1920.jpg" alt="Étude 1" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Étude de Cas - 01 Nov 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Impact de la 5G sur le E-commerce</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Analyse détaillée de la manière dont la 5G redéfinit l'expérience utilisateur...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire l'étude
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-agk42-2599244.jpg" alt="Étude 2" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Étude Comparative - 25 Oct 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Cadres réglementaires de l'IA</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Comparaison des approches réglementaires de l'intelligence artificielle...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire l'étude
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-energepic-com-27411-2988232.jpg" alt="Étude 3" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Rapport de Recherche - 10 Oct 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Inclusion financière et Mobile Money</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Notre dernier rapport sur le rôle des services de Mobile Money...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire l'étude
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-caleb-ishaya-313370124-31528041.jpg" alt="Étude 4" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Étude de Faisabilité - 01 Oct 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">IoT pour l'agriculture durable</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Faisabilité de l'implémentation de solutions IoT (Internet des Objets)...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire l'étude
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-darlene-alderson-4389986.jpg" alt="Étude 5" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Rapport Annuel - 20 Sept 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">État de la transformation numérique 2025</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Notre rapport annuel complet sur les progrès, les obstacles et les opportunités de la numérisation en Afrique.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire l'étude
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="flex justify-left px-4 pt-5 pb-10">
+            <a 
+              href="etudes.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            >
+              <span class="truncate">Découvrez nos études</span>
+            </a>
+          </div>
+                
+          
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-[#0c131d] text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Nos derniers baromètres</h2>
+            <div class="flex gap-2">
+              <button id="baro-scroll-left-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button id="baro-scroll-right-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="baro-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 hide-scrollbar">
+            
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-pixabay-267350.jpg" alt="Baromètre 1" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Baromètre - Q4 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Connectivité Internet en Afrique Centrale</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Notre baromètre trimestriel sur l'évolution des taux de pénétration et de la qualité de la connexion internet...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire le baromètre
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-brett-sayles-4597280.jpg" alt="Baromètre 2" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Baromètre - Q4 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Adoption du Cloud par les PME</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Suivi de l'adoption des services cloud par les petites et moyennes entreprises au Gabon et au Cameroun.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire le baromètre
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/ipad-1126136_1280.jpg" alt="Baromètre 3" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Baromètre - Q3 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Compétences Numériques</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Évaluation des compétences numériques requises sur le marché du travail et de l'adéquation des formations.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire le baromètre
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-negativespace-34577.jpg" alt="Baromètre 4" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Baromètre - Q3 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Confiance dans le E-commerce</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Indice de confiance des consommateurs dans les plateformes de e-commerce locales et internationales.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire le baromètre
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/pexels-pixabay-60504.jpg" alt="Baromètre 5" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Baromètre - Q2 2025</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Cybersécurité des Entreprises</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      État des lieux des menaces et du niveau de préparation des entreprises face aux cyberattaques.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire le baromètre
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="flex justify-left px-4 pt-5 pb-10">
+            <a 
+              href="barometres.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            >
+              <span class="truncate">Découvrez nos baromètres</span>
+            </a>
+          </div>
+
+
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-[#0c131d] text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">Nos dernières tribunes</h2>
+            <div class="flex gap-2">
+              <button id="trib-scroll-left-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </button>
+              <button id="trib-scroll-right-btn" class="p-2 rounded-full bg-white border border-[#cdd8ea] shadow-sm text-[#0c131d] transition-colors hover:bg-[#e6ecf4] focus:outline-none focus:ring-2 focus:ring-[#0045ad]">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="trib-carousel" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 hide-scrollbar">
+            
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/dimitri.jfif" alt="Tribune 1" class="w-full h-48 object-cover object-top opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Tribune - 30 Oct 2025 - Dimitri Nseng</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">L'IA, une menace ou une opportunité ?</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Une réflexion de notre directeur sur le futur de l'intelligence artificielle et son rôle dans la société civile...
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la tribune
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/Harrys.png" alt="Tribune 2" class="w-full h-48 object-cover object-top opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Opinion - 28 Oct 2025 - Harrys Kaas</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">La souveraineté numérique est un impératif</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Pourquoi l'Afrique doit investir massivement dans ses propres infrastructures de données pour garantir son indépendance.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la tribune
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/Ken-h.png" alt="Tribune 3" class="w-full h-48 object-cover object-top opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Point de Vue - 22 Oct 2025 - Ken Mounguegui</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Former la jeunesse aux métiers de demain</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Un plaidoyer pour une réforme en profondeur des systèmes éducatifs afin de les aligner sur les besoins de l'économie numérique.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la tribune
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/Darren.jfif" alt="Tribune 4" class="w-full h-48 object-cover object-top opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Tribune - 15 Oct 2025 - Darren Ntoutoume</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Le "Leapfrogging" technologique est-il un mythe ?</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Déconstruction d'un concept populaire : le "saut de grenouille" technologique en Afrique, ses succès et ses limites.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la tribune
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0 w-80 snap-center p-2">
+              <div class="relative rounded-xl overflow-hidden shadow-md group transition-all duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1 h-full flex flex-col">
+                <img src="images/Axel-mombo.jfif" alt="Tribune 5" class="w-full h-48 object-cover opacity-75">
+                <div class="p-4 bg-white flex-1 flex flex-col justify-between">
+                  <div>
+                    <p class="text-xs text-gray-500 mb-1">Opinion - 10 Oct 2025 - Axel Mombo</p>
+                    <h3 class="text-lg font-bold text-[#0c131d] leading-tight mb-2">Verdir le numérique : un défi pour l'Afrique</h3>
+                    <p class="text-sm text-[#456aa1] line-clamp-3">
+                      Comment concilier la croissance exponentielle du secteur tech avec les impératifs de durabilité environnementale.
+                    </p>
+                  </div>
+                  <a href="#" class="mt-3 inline-flex items-center text-[#0045ad] text-sm font-semibold">
+                    Lire la tribune
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="flex justify-left px-4 pt-5 pb-10">
+            <a 
+              href="tribunes.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] w-fit"
+            >
+              <span class="truncate">Découvrez nos tribunes</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+  
+  <div 
+    id="search-modal" 
+    class="fixed inset-0 z-50 flex items-start justify-center bg-black/60 p-10 backdrop-blur-sm hidden"
+  >
+    <div class="relative w-full max-w-lg bg-white rounded-xl shadow-2xl p-6">
+      
+      <button 
+        id="close-search-modal" 
+        type="button" 
+        aria-label="Fermer la recherche" 
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 transition-colors"
+      >
+        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <form action="#" method="get" class="flex flex-col gap-4">
+        <label for="search-input" class="text-lg font-semibold text-[#0c131d]">Rechercher sur le site</label>
+        <div class="relative">
+          <input 
+            type="search" 
+            id="search-input" 
+            name="q" 
+            placeholder="Tapez vos mots-clés..." 
+            class="w-full h-12 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0045ad] focus:border-[#0045ad] outline-none"
+          />
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg class="size-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </div>
+        </div>
+        <button 
+          type="submit" 
+          class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-xl h-10 px-4 bg-[#0045ad] text-[#f8f9fc] text-sm font-bold tracking-[0.015em] w-fit"
+        >
+          Rechercher
+        </button>
+      </form>
+    </div>
+  </div>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    
+      // --- 1. ANIMATION AU DÉFILEMENT (OBSERVER) ---
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1 
+      };
+      const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      };
+      const observer = new IntersectionObserver(observerCallback, observerOptions);
+      
+      const elementsToObserve = document.querySelectorAll(
+        '.flex.flex-col.gap-10.px-4,' +
+        'div[class*="@container"]'
+      );
+      elementsToObserve.forEach(el => {
+        el.classList.add('fade-in-section');
+        observer.observe(el);
+      });
+
+      // --- 2. GESTION MODALE RECHERCHE ---
+      const openSearchBtn = document.getElementById('open-search-btn');
+      const searchModal = document.getElementById('search-modal');
+      const closeSearchBtn = document.getElementById('close-search-modal');
+      const searchInput = document.getElementById('search-input');
+      
+      if (openSearchBtn && searchModal && closeSearchBtn && searchInput) {
+        const openModal = () => {
+          searchModal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+          searchInput.focus();
+        };
+        const closeModal = () => {
+          searchModal.classList.add('hidden');
+          document.body.style.overflow = '';
+        };
+        openSearchBtn.addEventListener('click', openModal);
+        closeSearchBtn.addEventListener('click', closeModal);
+        searchModal.addEventListener('click', (event) => {
+          if (event.target === searchModal) {
+            closeModal();
+          }
+        });
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape' && !searchModal.classList.contains('hidden')) {
+            closeModal();
+          }
+        });
+      }
+
+      // --- 3. GESTION DES 4 CARROUSELS ---
+      
+      // Fonction d'aide générique pour les carrousels
+      const setupCarousel = (carouselId, leftBtnId, rightBtnId) => {
+        const carousel = document.getElementById(carouselId);
+        const leftBtn = document.getElementById(leftBtnId);
+        const rightBtn = document.getElementById(rightBtnId);
+        
+        if (carousel && leftBtn && rightBtn) {
+          const scrollAmount = 300; // Défilement de 300px
+          
+          leftBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+          });
+          
+          rightBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          });
+        }
+      };
+      
+      // Initialisation des 4 carrousels
+      setupCarousel('articles-carousel', 'scroll-left-btn', 'scroll-right-btn');
+      setupCarousel('etudes-carousel', 'etudes-scroll-left-btn', 'etudes-scroll-right-btn');
+      setupCarousel('baro-carousel', 'baro-scroll-left-btn', 'baro-scroll-right-btn');
+      setupCarousel('trib-carousel', 'trib-scroll-left-btn', 'trib-scroll-right-btn');
+      
+      // --- 4. MENUS DÉROULANTS ---
+      const dropdowns = document.querySelectorAll('.dropdown-menu');
+      
+      dropdowns.forEach(dropdown => {
+        const panel = dropdown.querySelector('.dropdown-panel');
+        
+        dropdown.addEventListener('mouseenter', () => {
+          panel.classList.remove('opacity-0', 'scale-95', 'pointer-events-none');
+          panel.classList.add('opacity-100', 'scale-100', 'pointer-events-auto');
+        });
+        
+        dropdown.addEventListener('mouseleave', () => {
+          panel.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+          panel.classList.remove('opacity-100', 'scale-100', 'pointer-events-auto');
+        });
+      });
+
+    }); // <-- Fin du 'DOMContentLoaded'
+  </script>
+
+<footer class="bg-[#0c131d] text-[#f8f9fc] py-12">
+    <div class="max-w-6xl w-full mx-auto px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <img src="C.png" alt="Logo CERITA" class="h-28 w-28 bg-white rounded-md p-1">
+           <!---- <span class="text-xl font-bold">CERITA</span> -->
+          </div>
+          <p class="text-sm text-gray-400">
+            Cercle d'Etudes et de Réflexion Indépendant sur la Technologie en Afrique.
+          </p>
+          <div class="text-sm text-gray-400">
+            <p>Libreville, Gabon</p>
+            <p class="mt-1">
+              <a href="mailto:contact@cerita.org" class="hover:text-white hover:underline">contact@cerita.org</a>
+            </p>
+            <p>
+              <a href="tel:+24111223344" class="hover:text-white hover:underline">+241 11 22 33 44</a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Publications</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Articles</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Etudes</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Baromètres</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Tribunes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Qui sommes-nous</h3>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Missions et valeurs</a></li>
+            <li><a href="team.html" class="text-sm text-gray-400 hover:text-white hover:underline">Notre équipe</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Evènements</a></li>
+            <li><a href="#" class="text-sm text-gray-400 hover:text-white hover:underline">Nous contacter</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">Suivez-nous</h3>
+          <div class="flex gap-3">
+            <a href="#" class="bg-[#0045ad] p-2 rounded-md text-white transition-opacity hover:opacity-80" aria-label="Suivez-nous sur X">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="bg-[#0045ad] p-2 rounded-md text-white transition-opacity hover:opacity-80" aria-label="Suivez-nous sur LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.785-1.75-1.75s.784-1.75 1.75-1.75 1.75.785 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="#" class="bg-[#0045ad] p-2 rounded-md text-white transition-opacity hover:opacity-80" aria-label="Suivez-nous sur YouTube">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 4-8 4z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="mt-10 border-gray-700">
+      <div class="mt-8 text-center text-sm text-gray-500">
+        <p>© 2025 CERITA Think Tank. Tous droits réservés.</p>
+        <p class="mt-1">
+          <a href="#" class="hover:text-gray-300 hover:underline">Politique de confidentialité</a>
+          <span class="mx-2">|</span>
+          <a href="#" class="hover:text-gray-300 hover:underline">Mentions légales</a>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+ </body>
+</html>
